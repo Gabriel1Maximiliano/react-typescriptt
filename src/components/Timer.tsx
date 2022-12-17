@@ -11,7 +11,7 @@ const ref = useRef<NodeJS.Timer>();
     useEffect(() => {
         ref.current && clearInterval( ref.current );
     ref.current = setInterval(() =>setSegundos( s=>s+1 ),milisegundos );
-    }, [milisegundos]) //git push -u origin main
+    }, [milisegundos]) 
       
   return (
     <><h4>Timer : <small>{ segundos }</small></h4></>
